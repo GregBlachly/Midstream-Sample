@@ -78,9 +78,8 @@ var getWFSLayer = (layerName, styleObject = null, onEachFeatureFunction = null) 
 
 
 /*Get WFS Layer and Add to Map*/
-//var WFSLayer1 = getWFSLayer('ne:countries');  //able to get this layer when using "var serverAndPort = 'localhost:8080';" in getWFSLayer() function
-var WFSLayer1 = getWFSLayer('it.geosolutions:CrudeOilPipelines');
-WFSLayer1.addTo(map)
+var WFSLayer1 = getWFSLayer('it.geosolutions:CrudeOilPipelines').addTo(map);
+var WFSLayer2 = getWFSLayer('ne:countries').addTo(map);  //able to get this layer when using "serverAndPort = 'localhost:8080';" in getWFSLayer() function
 
 
 
@@ -115,6 +114,10 @@ var overLayers = [
             {
                 name: 'Oil Pipeline WFS',
                 layer: WFSLayer1,
+            },
+            {
+                name: 'Example Countries Layer',
+                layer: WFSLayer2,
             }, 
         ],
     },
