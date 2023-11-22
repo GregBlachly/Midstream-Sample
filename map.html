@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='en'> 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title></title>
+        
+        <!------CSS------>
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"/>
+        <!--Leaflet-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+        <!--Leaflet Plugins-->
+        <link href="./resources/plugins/L.LayerTreeControl-master/L.LayerTreeControl-master/src/L.LayerTreeControl.css" rel="stylesheet" type="text/css"/>
+        <link href="./resources/plugins/Leaflet.Control.Layers.Tree-master/Leaflet.Control.Layers.Tree-master/L.Control.Layers.Tree.css" rel="stylesheet" type="text/css"/>
+        <link href="./resources/plugins/leaflet-panel-layers-master/leaflet-panel-layers-master/src/leaflet-panel-layers.css" rel="stylesheet" type="text/css"/>
+        <!--Map.css-->
+        <link href="./resources/css/map.css" rel="stylesheet" type="text/css"/>
+
+        <!------SCRIPTS------>
+        <!--Leaflet-->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <!--ESRI-Leaflet-->
+        <script src="https://unpkg.com/esri-leaflet@3.0.11/dist/esri-leaflet.js" integrity="sha512-qSE34Lz9JHdaPt3AZsi6L3dcqYHO9nnQEIxfrkgrRqqe+R0DPuAMu+j2vlb92zPka9O+XHZV4+9G5/rHT5ADsQ==" crossorigin=""></script>
+        <!--Leaflet Plugins-->
+        <script src="./resources/plugins/L.LayerTreeControl-master/L.LayerTreeControl-master/src/L.LayerTreeControl.js"></script>
+        <script src="./resources/plugins/Leaflet.Control.Layers.Tree-master/Leaflet.Control.Layers.Tree-master/L.Control.Layers.Tree.js"></script>
+        <script src="./resources/plugins/leaflet-panel-layers-master/leaflet-panel-layers-master/src/leaflet-panel-layers.js"></script>
+        <script src="./resources/plugins/leaflet-geoserver-request-master/leaflet-geoserver-request-master/src/L.Geoserver.js"></script>
+        <script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
+        <!--Font Awesome-->
+        <script src="https://kit.fontawesome.com/015e2080d4.js" crossorigin="anonymous"></script>
+
+        <!------DEFERRED SCRIPTS------>
+        <!--JQuery/Bootstrap Scripts-->
+        <script src="./resources/plugins/jquery-3.7.1.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous" defer></script>
+        <!--Map.js-->
+        <script src="./resources/js/map.js" defer></script>
+    </head>
+    <body>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-12 m-2">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                            <input type="radio" name="display-options" id="map-option" autocomplete="off" checked/>Map
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="display-options" id="list-option" autocomplete="off"/>List
+                        </label>
+                    </div> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div id="map"></div>
+                    <div id="list" style="display:none;"><h1>List Here</h1></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html> 

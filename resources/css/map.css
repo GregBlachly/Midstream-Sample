@@ -1,0 +1,23 @@
+/* #map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+} */
+
+.no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+#map {
+    height: 90vh;
+}
+
+.layer-control {
+    min-width: 200px;
+    min-height: 100vh;
+    color: black; 
+    background-color: lightgray;
+}
